@@ -20,8 +20,8 @@ import androidx.compose.ui.unit.dp
 import kotlin.collections.remove
 
 @Composable
-fun CityScreen(){ //控制全部的父级函数
-    var clickButton by remember { //确定按钮是否被点击
+fun CityScreen(){ //control the all the function for the city list
+    var clickButton by remember {
         mutableStateOf(false)
     }
     var cityName by remember { //确定城市名称

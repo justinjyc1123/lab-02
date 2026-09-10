@@ -8,11 +8,11 @@ class City(
     var name: String,
 ) {
     var isSelected by mutableStateOf(false)
-    fun changeSelect(){ //改变当前状态
+    fun changeSelect(){ //change the selected
         isSelected = !isSelected
     }
 
-    fun checkSelect(): Boolean{ //检查是否被选择
+    fun checkSelect(): Boolean{
         return isSelected
     }
 
