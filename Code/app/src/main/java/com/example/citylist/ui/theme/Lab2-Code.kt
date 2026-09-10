@@ -27,7 +27,7 @@ fun CityScreen(){ //control the all the function for the city list
     var cityName by remember { //确定城市名称
         mutableStateOf("")
     }
-    var cityList = remember { //创建城市列表
+    val cityList = remember { //创建城市列表
         InitCityList(mutableStateListOf<City>())
     }
     var selectCity by remember { //选择对应城市
